@@ -77,8 +77,6 @@ dialog {
 
 /* Кнопки */
 button {
-    position: absolute;
-
     transition: 0.5s;
 
     background: #000063;
