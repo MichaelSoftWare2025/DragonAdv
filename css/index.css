@@ -184,11 +184,19 @@ button {
     #container {
         padding: 15px;
     }
+
+    #game-container {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 500px) {
     #menu-btn {
         font-size: 0.8rem;
+    }
+
+    #game-container {
+        font-size: 12px;
     }
 }
 
@@ -196,11 +204,19 @@ button {
     #menu-btn {
         font-size: 0.6rem;
     }
+
+    #game-container {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 300px) {
     #menu-btn {
         font-size: 0.4rem;
+    }
+
+    #game-container {
+        font-size: 8px;
     }
 }
 
