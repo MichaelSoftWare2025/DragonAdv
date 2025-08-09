@@ -77,14 +77,18 @@ dialog {
 
 /* Кнопки */
 button {
+    position: absolute;
+
     transition: 0.5s;
 
     background: #000063;
 
-    border: 1px solid #0202c4;
+    border: 1px solid #ffffff;
     border-radius: 5px;
 
     width: 100px;
+    height: 40px;
+
     font-size: 1rem;
 }
 
@@ -117,6 +121,10 @@ button:hover {
 
     border: 5px solid #0202c4;
     border-radius: 5px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     width: 600px;
     height: 400px;

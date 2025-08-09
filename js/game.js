@@ -5,6 +5,7 @@ const engine = new TextEngine();
 const gameContainer = document.getElementById('game-container');
 const controls = document.getElementById('number-controls');
 const fileInput = document.getElementById('gamefile');
+const restartButton = document.getElementById('restart');
 
 const previousDisplay = fileInput.style.display || '';
 
@@ -37,12 +38,13 @@ function render() {
     const count = engine.getChoiceCount();
 
     if (count === 0) {
-        gameContainer.textContent = '';       // стираем текст
+        gameContainer.textContent = engine.getSceneText();
+
         controls.disabled = true;
         controls.value = '';
-        fileInput.style.display = previousDisplay;  // показываем кнопку загрузки
+        fileInput.style.display = previousDisplay;
         alert('Конец игры.');
-        window.location.reload();
+        restartButton.style.display = 'block';
         return;
     }
 
